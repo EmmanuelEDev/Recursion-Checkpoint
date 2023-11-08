@@ -1,0 +1,20 @@
+FUNCTION palindrome_check
+VAR
+    array : ARRAY_OF INTEGER;
+    i,j, true,false : INTEGER;
+    
+BEGIN
+    i := array[0] to array.length[-1]
+    j := array.lenght[-1] to array[0]
+    IF (i := j) THEN
+        RETURN true
+    IF (array := " ") THEN
+        RETURN true
+    END_IF
+    IF (array := array[1]) THEN
+        RETURN true
+    END_IF
+    ELSE
+        RETURN false
+    END_IF
+END
